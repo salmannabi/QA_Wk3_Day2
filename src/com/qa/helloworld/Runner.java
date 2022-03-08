@@ -7,7 +7,7 @@ public class Runner {
 		HelloWorld myObj = new HelloWorld();
 		
 		myObj.helloWorld();
-		myObj.printMessage("Hello World", "This is some text");
+		myObj.printMessage("Hello World", "This is some text", 10);
 		String result = myObj.returnString("Hello", "This is a returned string");
 		System.out.println(result);
 	}
