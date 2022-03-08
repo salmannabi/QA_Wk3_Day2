@@ -8,6 +8,8 @@ public class Runner {
 		
 		myObj.helloWorld();
 		myObj.printMessage("Hello World", "This is some text");
+		String result = myObj.returnString("Hello", "This is a returned string");
+		System.out.println(result);
 	}
 	
 }
