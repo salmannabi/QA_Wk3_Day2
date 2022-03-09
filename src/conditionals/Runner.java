@@ -1,5 +1,8 @@
 package conditionals;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class Runner {
 
 	public static void main(String[] args) {
@@ -54,9 +57,36 @@ public class Runner {
 		System.out.println(ex.unSum(1, 1, 2));
 		System.out.println("-----------------------------");
 		
-		System.out.println("Exercise 4");
+		Tax tax = new Tax();
+		System.out.println("Exercise 4 - 1");
 		System.out.println("-----------------------------");
 		
+		NumberFormat formatter = new DecimalFormat("#0.00");
+		String test1 = formatter.format(tax.varTax(19000));
+		String test2 = formatter.format(tax.varTax(29000));
+		String test3 = formatter.format(tax.varTax(39000));
+		String test4 = formatter.format(tax.varTax(49000));
+		String test5 = formatter.format(tax.varTax(120000));
+		System.out.println("Tax Rate: " + test1 + "%");
+		System.out.println("Tax Rate: " + test2 + "%");
+		System.out.println("Tax Rate: " + test3 + "%");
+		System.out.println("Tax Rate: " + test4 + "%");
+		System.out.println("Tax Rate: " + test5 + "%");
+		
+		System.out.println("-----------------------------");
+
+		System.out.println("Exercise 4 - 2");
+		System.out.println("-----------------------------");
+		String test6 = formatter.format(tax.taxAmount(19000));
+		String test7 = formatter.format(tax.taxAmount(29000));
+		String test8 = formatter.format(tax.taxAmount(39000));
+		String test9 = formatter.format(tax.taxAmount(49000));
+		String test10 = formatter.format(tax.taxAmount(120000));
+		System.out.println("Tax: " + test6);
+		System.out.println("Tax: " + test7);
+		System.out.println("Tax: " + test8);
+		System.out.println("Tax: " + test9);
+		System.out.println("Tax: " + test10);
 		System.out.println("-----------------------------");
 	}
 
