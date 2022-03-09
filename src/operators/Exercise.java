@@ -1,5 +1,8 @@
 package operators;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class Exercise {
 	private double physics;
 	private double chemistry;
@@ -47,6 +50,7 @@ public class Exercise {
 	}
 	
 	public void showPercent() {
-		System.out.println("Percentage: " + percentage);
+		NumberFormat formatter = new DecimalFormat("#0.00");
+		System.out.println("Percentage: " + formatter.format(percentage));
 	}
 }
