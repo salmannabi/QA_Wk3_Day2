@@ -88,6 +88,14 @@ public class Runner {
 		System.out.println("Tax: " + test9);
 		System.out.println("Tax: " + test10);
 		System.out.println("-----------------------------");
+		
+		System.out.println("Exercise 5");
+		System.out.println("-----------------------------");
+		System.out.println(ex.fizzBuzz(9));
+		System.out.println(ex.fizzBuzz(20));
+		System.out.println(ex.fizzBuzz(30));
+		System.out.println(ex.fizzBuzz(17));
+		System.out.println("-----------------------------");
 	}
 
 }
