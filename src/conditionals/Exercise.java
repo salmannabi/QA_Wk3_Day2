@@ -8,7 +8,7 @@ public class Exercise {
 	}
 	
 	public int blackJack(int i, int j) {
-		if (i > 21 && j > 22) { return 0; }
+		if (i > 21 && j > 21) { return 0; }
 		
 		if (i > j) { 
 			if (i <= 21) { return i; }

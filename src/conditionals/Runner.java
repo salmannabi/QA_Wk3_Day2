@@ -118,11 +118,11 @@ public class Runner {
 		fc.flow(90);
 		System.out.println("Testing 610");
 		fc.flow(610);
-		System.out.println("---");
+		System.out.println("Testing 590");
 		fc.flow(590);
-		System.out.println("---");
+		System.out.println("510");
 		fc.flow(510);
-		System.out.println("---");
+		System.out.println("490");
 		fc.flow(490);
 		System.out.println("-----------------------------");
 	}
