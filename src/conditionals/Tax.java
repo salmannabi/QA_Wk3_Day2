@@ -1,8 +1,5 @@
 package conditionals;
 
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
-
 public class Tax {
 	private int band1 = 14999; // 0% tax
 	private int band2 = 19999; // 10% tax

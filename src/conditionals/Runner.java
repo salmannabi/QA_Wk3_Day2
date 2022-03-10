@@ -96,6 +96,34 @@ public class Runner {
 		System.out.println(ex.fizzBuzz(30));
 		System.out.println(ex.fizzBuzz(17));
 		System.out.println("-----------------------------");
+		
+		System.out.println("Exercise Flow Chart");
+		System.out.println("-----------------------------");
+		FlowChart fc = new FlowChart();
+		System.out.println("Testing 2100");
+		fc.flow(2100);
+		System.out.println("Testing 1900");
+		fc.flow(1900);
+		System.out.println("Testing 6100");
+		fc.flow(6100);
+		System.out.println("Testing 5900");
+		fc.flow(5900);
+		System.out.println("Testing 4100");
+		fc.flow(4100);
+		System.out.println("Testing 3900");
+		fc.flow(3900);
+		System.out.println("Testing 110");
+		fc.flow(110);
+		System.out.println("Testing 90");
+		fc.flow(90);
+		System.out.println("Testing 610");
+		fc.flow(610);
+		System.out.println("---");
+		fc.flow(590);
+		System.out.println("---");
+		fc.flow(510);
+		System.out.println("---");
+		fc.flow(490);
+		System.out.println("-----------------------------");
 	}
-
 }
