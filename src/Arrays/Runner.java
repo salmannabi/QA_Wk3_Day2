@@ -72,6 +72,12 @@ public class Runner {
 		System.out.println("-----------------------------");
 		System.out.println();
 
+		for (int i = 1; i <= 100; i++) {
+			if (i < 20) { ex.oneToNineteen(i); }
+			else if (i < 100) { ex.twentyToNinetynine(i); }
+			else { ex.hundredTo999(i); }
+		}
+		
 		System.out.println();
 		System.out.println("-----------------------------");
 
