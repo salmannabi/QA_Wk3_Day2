@@ -29,8 +29,7 @@ public class Runner {
 		printReverseVertical(strOne);
 		
 		System.out.println("\nMethod 4:");
-		
-		
+		System.out.println(findString("i am here", "am h"));
 	}
 	
 	public static int returnWords(String str) {
@@ -95,8 +94,19 @@ public class Runner {
 	
 	public static boolean findString(String str, String sub) {
 		boolean found = false;
+		int j = 0;
 		
-		
+		for (int i = 0; i < str.length(); i ++) {
+			if (j == sub.length()) {
+				return true;
+			} else if (j < sub.length() && str.charAt(i) == sub.charAt(j)) {
+				found = true;
+				j++;
+			} else {
+				found = false;
+				j = 0;
+			}
+		}
 		return false;
 	}
 
