@@ -48,6 +48,11 @@ public class Runner {
 		System.out.println("-----------------------------");
 		System.out.println();
 
+		ex.hundredTo999(99);
+		ex.hundredTo999(100);
+		ex.hundredTo999(999);
+		ex.hundredTo999(1000);
+		
 		System.out.println();
 		System.out.println("-----------------------------");
 		
@@ -55,6 +60,11 @@ public class Runner {
 		System.out.println("-----------------------------");
 		System.out.println();
 
+		ex.hundredTo9999(999);
+		ex.hundredTo9999(1000);
+		ex.hundredTo9999(9999);
+		ex.hundredTo9999(10000);
+		
 		System.out.println();
 		System.out.println("-----------------------------");
 		

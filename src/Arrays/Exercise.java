@@ -46,7 +46,7 @@ public class Exercise {
 		int elem = 0;
 		int remainder = 0;
 		
-		if (num < 1 || num > 99) { System.out.println("Please try again: Error in 1 - 99"); }
+		if (num < 1 || num > 99) { System.out.println("Please try again: Error in 1 - 99 : " + num); }
 		else {
 			if (num > 19) {
 				elem = num / 10;
@@ -54,10 +54,49 @@ public class Exercise {
 				
 				if (remainder != 0) { System.out.print(array[elem - 2] + "-"); }
 				else { System.out.println(array[elem -2]); }
-			}
-			else { remainder = 19; }
+			} else { remainder = num; }
 			
 			if (remainder > 0) { oneToNineteen(remainder); }
+		}
+	}
+	
+	// Deriving strings for the 10's between 20 to 90 inclusive
+	public void hundredTo999(int num) {
+		String[] array = {"Hundred", "Two-Hundred", "Three-Hundred", "Four-Hundred", "Five-Hundred", "Six-Hundred", "Seven-Hundred", "Eight-Hundred", "Nine-Hundred"};
+		int elem = 0;
+		int remainder = 0;
+		
+		if (num < 1 || num > 999) { System.out.println("Please try again: Error in 1 - 999"); }
+		else {
+			if (num > 99) {
+				elem = num / 100;
+				remainder = num % 100;
+				
+				if (remainder != 0) { System.out.print(array[elem - 1] + "-"); }
+				else { System.out.println(array[elem -1]); }
+			} else { remainder = num; }
+			
+			if (remainder > 0) { twentyToNinetynine(remainder); }
+		}
+	}
+	
+	// Deriving strings for the 10's between 20 to 90 inclusive
+	public void hundredTo9999(int num) {
+		String[] array = {"One-Thousand", "Two-Thousand", "Three-Thousand", "Four-Thousand", "Five-Thousand", "Six-Thousand", "Seven-Thousand", "Eight-Thousand", "Nine-Thousand"};
+		int elem = 0;
+		int remainder = 0;
+		
+		if (num < 1 || num > 9999) { System.out.println("Please try again: Error in 1 - 9999"); }
+		else {
+			if (num > 999) {
+				elem = num / 1000;
+				remainder = num % 1000;
+				
+				if (remainder != 0) { System.out.print(array[elem - 1] + "-"); }
+				else { System.out.println(array[elem -1]); }
+			} else { remainder = num; }
+			
+			if (remainder > 0) { hundredTo999(remainder); }
 		}
 	}
 	
