@@ -6,11 +6,7 @@ public class Runner {
 		// TODO Auto-generated method stub
 		String strOne = "yesterday it was raining";
 		String strTwo = "today it is sunny";
-		
-//		for (int i = strOne.length() - 1; i >= 0; i--) {
-//			System.out.print(strOne.charAt(i));
-//		}
-//		
+			
 		String strThree = (strOne + strTwo).toUpperCase();
 		System.out.println(strThree);
 		
@@ -83,13 +79,6 @@ public class Runner {
 		for (int i = strArray.length - 1; i >= 0; i--) {
 			System.out.println(strArray[i]);
 		}
-		
-//		// First reverse the string
-//		String reverse = "";
-//		for (int i = str.length() - 1; i >= 0; i--) {
-//			reverse += str.charAt(i);
-//		}
-//		return reverse;
 	}
 	
 	public static boolean findString(String str, String sub) {
@@ -109,21 +98,4 @@ public class Runner {
 		}
 		return false;
 	}
-
-
-//    Create two Strings where one string has a value of “yesterday it was raining” and the other string with a value of “today it is sunny”
-//
-//    Concatenate both values, capitalise both strings and print out the result.
-//    The result should be: TODAY IT IS SUNNY, YESTERDAY IT WAS RAINING
-//    Solution
-//    Now use the substring method to print out: `TODAY IT IS RAINING`
-//    Solution
-//
-//    For this task you are to implement 4 methods that manipulate String objects. For all parts of this section you are only allowed to use the length(), substring(), and equals() methods. Avoid using arrays or any methods you have yet to be taught as this defeats the purpose of the exercise:
-//
-//    Method 1 - When given a String, count and return how many words there are in that String.
-//    Method 2 - When given a String, print out this String in a vertical fashion, each word on a different line.
-//    Method 3 - When given a String, print out this String in a vertical fashion in reverse order, each word on a different line.
-//    Method 4 - A find method, which takes 2 Strings; the first is message and the second is the String you want to find in the message. A boolean value should be returned to indicate whether or not the second String has been found in the message.
-
 }
