@@ -27,6 +27,4 @@ public class Bike extends Vehicle {
 	public void setMaxLoad(String maxLoad) {
 		this.maxLoad = maxLoad;
 	}
-	
-	
 }

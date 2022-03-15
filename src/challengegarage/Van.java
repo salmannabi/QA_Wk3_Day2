@@ -25,6 +25,4 @@ public class Van extends Vehicle {
 	public void setCarryCapacity(String carryCapacity) {
 		this.carryCapacity = carryCapacity;
 	}
-	
-	
 }
