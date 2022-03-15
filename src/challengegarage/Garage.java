@@ -38,12 +38,16 @@ public class Garage {
 	}
 	
 	public static void removeVehicleByType(String type) {
+		int count = 0;
 		for (int i = 0; i < vehicleList.size(); i++) {
-			if (vehicleList.get(i).getClass().getName().equals(type)) {
+			if (vehicleList.get(i).getClass().getSimpleName().toLowerCase().equals(type)) {
 				vehicleList.remove(i);
+				count++;
 				i--;
 			}
 		}
+		
+		System.out.println("Removed " + count + " vehicles of type: " + type + "\n");
 	}
 	
 	public static void removeAll() {

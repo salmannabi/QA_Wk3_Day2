@@ -23,6 +23,10 @@ public class Runner {
 		Garage.removeVehicleById(1000);
 		System.out.println();
 		
+		// Testing removing vehicles by type
+		Garage.removeVehicleByType("van");
+		Garage.removeVehicleByType("Scooter");
+		
 		// Checking the current status of the vehicle list
 		Garage.printAllVehicles();
 	}
