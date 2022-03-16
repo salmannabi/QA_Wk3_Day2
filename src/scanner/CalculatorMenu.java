@@ -26,11 +26,19 @@ public class CalculatorMenu {
 					
 					if (input > 0 && input <= 4) {
 						System.out.print("Please enter first number: ");
-						int numOne = scanner.nextInt();
-						System.out.println();
-						System.out.print("please enter second number: ");
-						int numTwo = scanner.nextInt();
-						System.out.println();
+						int numOne = 0;
+						int numTwo = 0;
+						
+						try {
+							numOne = scanner.nextInt();
+							System.out.println();
+							System.out.print("please enter second number: ");
+							numTwo = scanner.nextInt();
+							System.out.println();
+						} catch (InputMismatchException e) {
+							scanner.next();
+							continue;
+						}
 						
 						switch(input) {
 						case 1:
